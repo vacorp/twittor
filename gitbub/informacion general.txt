@@ -1,0 +1,17 @@
+web: github.com
+usuario: vacorp
+password: swami231124042505
+repositorio: twittor
+
+Estando en CMD, en el diretorio de 06-twittor
+
+git init   // verificar en visual studio qe todo se pone en verde
+git status // para ver los archivos que hay que subir
+git add .  // para  agregarlos a u lugar que se llama stage
+git commit -m "Primer commit"  // para hacer el commit de lo que hay en el stage
+
+
+comandos para subir twittor a github
+
+git remote add origin https://github.com/vacorp/twittor.git
+git push -u origin master
