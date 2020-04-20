@@ -9,6 +9,7 @@ var swLocation =  '/twittor/sw.js'; // path del twittor, ver el href en github
 if (navigator.serviceWorker){
 
     // recordemos que estamos detectando donde esta el sw.js
+
     if (url.includes('localhost')){
         swLocation = '/sw.js'; // como estaba antes de subirlo a github
 
