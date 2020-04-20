@@ -1,7 +1,21 @@
 
+//video 78, para que corra en github, hacemos esta validacion adicional
+// para ver si estamos en desarrollo o produccion
+
+var url = window.location.href;
+var swLocation =  '/twittor/sw.js'; // path del twittor, ver el href en github 
+
 //video 74
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+
+    // recordemos que estamos detectando donde esta el sw.js
+    if (url.includes('localhost')){
+        swLocation = '/sw.js'; // como estaba antes de subirlo a github
+
+
+    }
+    navigator.serviceWorker.register(swLocation);
+
 }
 
 // Referencias de jQuery
